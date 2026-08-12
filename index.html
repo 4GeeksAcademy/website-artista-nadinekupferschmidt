@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sofía Artigas Studio | Artista Visual</title>
+	<meta name="description" content="Sofía Artigas Studio: artista visual contemporánea. Obras, proceso creativo y contacto.">
+
+	<!-- Tipografías: sans moderna + serif estilizada -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body class="page">
+	<!-- Accesibilidad: permite saltar directo al contenido principal -->
+	<a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+	<header class="site-header" id="inicio">
+		<div class="site-header__inner">
+			<a class="site-header__brand" href="#inicio" aria-label="Ir al inicio">
+				<span class="site-header__brand-main">Sofía Artigas</span>
+				<span class="site-header__brand-sub">Studio</span>
+			</a>
+
+			<nav class="site-header__nav" aria-label="Navegación principal">
+				<ul class="site-header__menu">
+					<li class="site-header__item"><a class="site-header__link" href="#sobre">Sobre</a></li>
+					<li class="site-header__item"><a class="site-header__link" href="#obras">Obras</a></li>
+					<li class="site-header__item"><a class="site-header__link" href="#proceso">Proceso</a></li>
+					<li class="site-header__item"><a class="site-header__link" href="#contacto">Contacto</a></li>
+				</ul>
+			</nav>
+
+			<a class="site-header__cta" href="mailto:hola@sofiaartigasstudio.com">Escribir</a>
+		</div>
+	</header>
+
+	<main class="main" id="contenido">
+		<!-- HERO: primer impacto visual y conceptual -->
+		<section class="hero" aria-labelledby="hero-title">
+			<div class="hero__content">
+				<p class="hero__kicker">Universo visual contemporáneo</p>
+				<h1 class="hero__title" id="hero-title">
+					Sofía <span class="hero__title-accent">Art</span>igas Studio
+				</h1>
+				<p class="hero__tagline">
+					Composiciones sensibles entre color, materia y silencio.
+				</p>
+				<a class="hero__button" href="#obras">Explorar obras</a>
+			</div>
+
+			<figure class="hero__figure">
+				<img
+					class="hero__image"
+					src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=1200&q=80"
+					alt="Pinceles, paleta y materiales de pintura sobre una mesa de estudio"
+				>
+				<figcaption class="hero__caption">Serie actual: trazos orgánicos y capas translúcidas.</figcaption>
+			</figure>
+		</section>
+
+		<!-- SOBRE SOFÍA: presentación breve, personal y artística -->
+		<section class="about" id="sobre" aria-labelledby="about-title">
+			<article class="about__text">
+				<h2 class="about__title" id="about-title">Sobre Sofía</h2>
+				<p class="about__paragraph">
+					Sofía Artigas es una artista visual que trabaja con pintura, collage y piezas mixtas.
+					Su búsqueda explora la memoria de los materiales y la tensión entre gesto y estructura.
+				</p>
+				<p class="about__paragraph">
+					Desde su estudio, desarrolla obras donde lo íntimo y lo editorial conviven en una narrativa
+					elegante, con una mirada femenina sin estereotipos.
+				</p>
+			</article>
+
+			<figure class="about__figure">
+				<img
+					class="about__image"
+					src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=1100&q=80"
+					alt="Mujer artista pintando de espaldas en su taller"
+				>
+				<figcaption class="about__caption">Estudio de Sofía, luz de tarde.</figcaption>
+			</figure>
+		</section>
+
+		<!-- OBRAS: galería editorial con tamaños asimétricos -->
+		<section class="works" id="obras" aria-labelledby="works-title">
+			<header class="works__header">
+				<h2 class="works__title" id="works-title">Obras seleccionadas</h2>
+				<p class="works__intro">Cuatro piezas recientes del archivo de Sofía Artigas Studio.</p>
+			</header>
+
+			<div class="works__list">
+				<figure class="works__item works__item--featured">
+					<img
+						class="works__image"
+						src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=1200&q=80"
+						alt="Pintura abstracta en tonos cálidos con formas orgánicas"
+					>
+					<figcaption class="works__caption">
+						<h3 class="works__name">Fragmento I</h3>
+						<p class="works__meta">Acrílico y pastel sobre lino, 2026</p>
+					</figcaption>
+				</figure>
+
+				<figure class="works__item works__item--tall">
+					<img
+						class="works__image"
+						src="https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?auto=format&fit=crop&w=900&q=80"
+						alt="Detalle de obra con líneas rojas y textura de papel"
+					>
+					<figcaption class="works__caption">
+						<h3 class="works__name">Eje Rojo</h3>
+						<p class="works__meta">Mixta sobre papel, 2026</p>
+					</figcaption>
+				</figure>
+
+				<figure class="works__item works__item--wide">
+					<img
+						class="works__image"
+						src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=1200&q=80"
+						alt="Composición artística con capas de color beige, terracota y rojo"
+					>
+					<figcaption class="works__caption">
+						<h3 class="works__name">Materia Quieta</h3>
+						<p class="works__meta">Óleo sobre bastidor, 2025</p>
+					</figcaption>
+				</figure>
+
+				<figure class="works__item">
+					<img
+						class="works__image"
+						src="https://images.unsplash.com/photo-1579965342575-16428a7c8881?auto=format&fit=crop&w=900&q=80"
+						alt="Pieza abstracta con contraste de tonos neutros y acentos intensos"
+					>
+					<figcaption class="works__caption">
+						<h3 class="works__name">Pulso III</h3>
+						<p class="works__meta">Pigmento y grafito, 2026</p>
+					</figcaption>
+				</figure>
+			</div>
+		</section>
+
+		<!-- PROCESO: universo creativo y materiales -->
+		<section class="process" id="proceso" aria-labelledby="process-title">
+			<h2 class="process__title" id="process-title">Proceso y universo</h2>
+
+			<div class="process__list">
+				<article class="process__item">
+					<h3 class="process__item-title">Materia</h3>
+					<p class="process__item-text">
+						Lino crudo, papel de algodón y capas de pigmento para construir superficies con memoria.
+					</p>
+				</article>
+
+				<article class="process__item">
+					<h3 class="process__item-title">Ritmo</h3>
+					<p class="process__item-text">
+						Gestos lentos, pausas y repeticiones: cada obra aparece por acumulación y contraste.
+					</p>
+				</article>
+
+				<article class="process__item">
+					<h3 class="process__item-title">Archivo</h3>
+					<p class="process__item-text">
+						Bocetos, fotografías y recortes editoriales alimentan nuevas series y variaciones.
+					</p>
+				</article>
+			</div>
+		</section>
+
+		<!-- CONTACTO: cierre simple y directo -->
+		<section class="contact" id="contacto" aria-labelledby="contact-title">
+			<h2 class="contact__title" id="contact-title">Contacto</h2>
+			<p class="contact__text">
+				Para colaboraciones, obras por encargo o exposiciones, escribime.
+			</p>
+
+			<ul class="contact__list" aria-label="Canales de contacto">
+				<li class="contact__item"><a class="contact__link" href="mailto:hola@sofiaartigasstudio.com">hola@sofiaartigasstudio.com</a></li>
+				<li class="contact__item"><a class="contact__link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+				<li class="contact__item"><a class="contact__link" href="https://www.behance.net" target="_blank" rel="noopener noreferrer">Behance</a></li>
+			</ul>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<p class="site-footer__text">© 2026 Sofía Artigas Studio. Dirección de arte y obra original.</p>
+	</footer>
+</body>
+</html>

@@ -9,7 +9,7 @@
 	<!-- Tipografías: sans moderna + serif estilizada -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="styles.css">
 </head>
@@ -19,10 +19,12 @@
 
 	<header class="site-header" id="inicio">
 		<div class="site-header__inner">
-			<a class="site-header__brand" href="#inicio" aria-label="Ir al inicio">
-				<span class="site-header__brand-main">Sofía Artigas</span>
-				<span class="site-header__brand-sub">Studio</span>
-			</a>
+			<div class="site-header__brand-wrap">
+				<a class="site-header__brand" href="#inicio" aria-label="Ir al inicio">
+					<span class="site-header__brand-main">Sofía Artigas</span>
+					<span class="site-header__brand-sub">Studio</span>
+				</a>
+			</div>
 
 			<nav class="site-header__nav" aria-label="Navegación principal">
 				<ul class="site-header__menu">
@@ -32,14 +34,21 @@
 					<li class="site-header__item"><a class="site-header__link" href="#contacto">Contacto</a></li>
 				</ul>
 			</nav>
-
-			<a class="site-header__cta" href="mailto:hola@sofiaartigasstudio.com">Escribir</a>
 		</div>
 	</header>
 
 	<main class="main" id="contenido">
 		<!-- HERO: primer impacto visual y conceptual -->
 		<section class="hero" aria-labelledby="hero-title">
+			<figure class="hero__figure">
+				<img
+					class="hero__image"
+					src="https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=1600&q=80"
+					alt="Sala de exposición con pinturas contemporáneas y visitantes"
+				>
+				<figcaption class="hero__caption">Vista de sala: recorrido editorial de obra y espacio.</figcaption>
+			</figure>
+
 			<div class="hero__content">
 				<p class="hero__kicker">Universo visual contemporáneo</p>
 				<h1 class="hero__title" id="hero-title">
@@ -48,17 +57,8 @@
 				<p class="hero__tagline">
 					Composiciones sensibles entre color, materia y silencio.
 				</p>
-				<a class="hero__button" href="#obras">Explorar obras</a>
+				<a class="hero__button" href="#obras">EXPLORAR OBRAS</a>
 			</div>
-
-			<figure class="hero__figure">
-				<img
-					class="hero__image"
-					src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=1200&q=80"
-					alt="Pinceles, paleta y materiales de pintura sobre una mesa de estudio"
-				>
-				<figcaption class="hero__caption">Serie actual: trazos orgánicos y capas translúcidas.</figcaption>
-			</figure>
 		</section>
 
 		<!-- SOBRE SOFÍA: presentación breve, personal y artística -->
@@ -88,12 +88,12 @@
 		<!-- OBRAS: galería editorial con tamaños asimétricos -->
 		<section class="works" id="obras" aria-labelledby="works-title">
 			<header class="works__header">
-				<h2 class="works__title" id="works-title">Obras seleccionadas</h2>
+				<h2 class="works__title" id="works-title">OBRAS SELECCIONADAS</h2>
 				<p class="works__intro">Cuatro piezas recientes del archivo de Sofía Artigas Studio.</p>
 			</header>
 
 			<div class="works__list">
-				<figure class="works__item works__item--featured">
+				<figure class="works__item">
 					<img
 						class="works__image"
 						src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=1200&q=80"
@@ -105,7 +105,7 @@
 					</figcaption>
 				</figure>
 
-				<figure class="works__item works__item--tall">
+				<figure class="works__item">
 					<img
 						class="works__image"
 						src="https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?auto=format&fit=crop&w=900&q=80"
@@ -117,7 +117,7 @@
 					</figcaption>
 				</figure>
 
-				<figure class="works__item works__item--wide">
+				<figure class="works__item">
 					<img
 						class="works__image"
 						src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=1200&q=80"
@@ -149,24 +149,51 @@
 
 			<div class="process__list">
 				<article class="process__item">
-					<h3 class="process__item-title">Materia</h3>
-					<p class="process__item-text">
-						Lino crudo, papel de algodón y capas de pigmento para construir superficies con memoria.
-					</p>
+					<figure class="process__media">
+						<img
+							class="process__image"
+							src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?auto=format&fit=crop&w=900&q=80"
+							alt="Pigmentos en polvo y recipientes de taller artístico"
+						>
+					</figure>
+					<div class="process__content">
+						<h3 class="process__item-title">Materia</h3>
+						<p class="process__item-text">
+							Lino crudo, papel de algodón y capas de pigmento para construir superficies con memoria.
+						</p>
+					</div>
 				</article>
 
 				<article class="process__item">
-					<h3 class="process__item-title">Ritmo</h3>
-					<p class="process__item-text">
-						Gestos lentos, pausas y repeticiones: cada obra aparece por acumulación y contraste.
-					</p>
+					<figure class="process__media">
+						<img
+							class="process__image"
+							src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=900&q=80"
+							alt="Pinceles y trazos sobre mesa de trabajo"
+						>
+					</figure>
+					<div class="process__content">
+						<h3 class="process__item-title">Ritmo</h3>
+						<p class="process__item-text">
+							Gestos lentos, pausas y repeticiones: cada obra aparece por acumulación y contraste.
+						</p>
+					</div>
 				</article>
 
 				<article class="process__item">
-					<h3 class="process__item-title">Archivo</h3>
-					<p class="process__item-text">
-						Bocetos, fotografías y recortes editoriales alimentan nuevas series y variaciones.
-					</p>
+					<figure class="process__media">
+						<img
+							class="process__image"
+							src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=900&q=80"
+							alt="Cuaderno con bocetos y notas de proceso creativo"
+						>
+					</figure>
+					<div class="process__content">
+						<h3 class="process__item-title">Archivo</h3>
+						<p class="process__item-text">
+							Bocetos, fotografías y recortes editoriales alimentan nuevas series y variaciones.
+						</p>
+					</div>
 				</article>
 			</div>
 		</section>
@@ -187,7 +214,17 @@
 	</main>
 
 	<footer class="site-footer">
-		<p class="site-footer__text">© 2026 Sofía Artigas Studio. Dirección de arte y obra original.</p>
+		<div class="site-footer__inner">
+			<p class="site-footer__brand">Sofía Artigas Studio</p>
+			<p class="site-footer__contact">
+				<a class="site-footer__link" href="mailto:hola@sofiaartigasstudio.com">hola@sofiaartigasstudio.com</a>
+			</p>
+			<ul class="site-footer__social" aria-label="Redes sociales">
+				<li class="site-footer__social-item"><a class="site-footer__link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+				<li class="site-footer__social-item"><a class="site-footer__link" href="https://www.behance.net" target="_blank" rel="noopener noreferrer">Behance</a></li>
+			</ul>
+			<p class="site-footer__text">© 2026 Sofía Artigas Studio. Dirección de arte y obra original.</p>
+		</div>
 	</footer>
 </body>
 </html>

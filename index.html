@@ -19,73 +19,102 @@
 
 	<header class="site-header" id="inicio">
 		<div class="site-header__inner">
-			<div class="site-header__brand-wrap">
-				<a class="site-header__brand" href="#inicio" aria-label="Ir al inicio">
-					<span class="site-header__brand-main">Sofía Artigas</span>
-					<span class="site-header__brand-sub">Studio</span>
-				</a>
-			</div>
-
-			<nav class="site-header__nav" aria-label="Navegación principal">
+			<nav class="site-header__nav site-header__nav--left" aria-label="Navegación izquierda">
 				<ul class="site-header__menu">
-					<li class="site-header__item"><a class="site-header__link" href="#sobre">Sobre</a></li>
-					<li class="site-header__item"><a class="site-header__link" href="#obras">Obras</a></li>
+					<li class="site-header__item"><a class="site-header__link" href="#sobre">About</a></li>
+					<li class="site-header__item"><a class="site-header__link" href="#obras">Portfolio</a></li>
 					<li class="site-header__item"><a class="site-header__link" href="#proceso">Proceso</a></li>
+				</ul>
+			</nav>
+
+			<a class="site-header__brand" href="#inicio" aria-label="Ir al inicio">
+				<span class="site-header__brand-main">Sofía Artigas</span>
+				<span class="site-header__brand-sub">Studio</span>
+			</a>
+
+			<nav class="site-header__nav site-header__nav--right" aria-label="Navegación derecha">
+				<ul class="site-header__menu">
+					<li class="site-header__item"><a class="site-header__link" href="#obras">Obras</a></li>
 					<li class="site-header__item"><a class="site-header__link" href="#contacto">Contacto</a></li>
+					<li class="site-header__item"><a class="site-header__link" href="mailto:hola@sofiaartigasstudio.com">Email</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 
 	<main class="main" id="contenido">
-		<!-- HERO: primer impacto visual y conceptual -->
+		<!-- HERO: imagen protagonista de estudio/galería -->
 		<section class="hero" aria-labelledby="hero-title">
 			<figure class="hero__figure">
 				<img
 					class="hero__image"
-					src="https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=1600&q=80"
-					alt="Sala de exposición con pinturas contemporáneas y visitantes"
+					src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=1800&q=80"
+					alt="Artista en su estudio rodeada de obras coloridas"
 				>
-				<figcaption class="hero__caption">Vista de sala: recorrido editorial de obra y espacio.</figcaption>
+				<figcaption class="hero__caption">Sofía Artigas Studio: pintura, materia y archivo visual.</figcaption>
 			</figure>
+		</section>
 
-			<div class="hero__content">
-				<p class="hero__kicker">Universo visual contemporáneo</p>
-				<h1 class="hero__title" id="hero-title">
-					Sofía <span class="hero__title-accent">Art</span>igas Studio
-				</h1>
-				<p class="hero__tagline">
-					Composiciones sensibles entre color, materia y silencio.
+		<!-- BIENVENIDA: texto central de presentación -->
+		<section class="welcome" aria-labelledby="hero-title">
+			<div class="welcome__inner">
+				<h1 class="welcome__title" id="hero-title">Bienvenida a mi estudio</h1>
+				<p class="welcome__text">
+					Pinturas para espacios sensibles. Series originales, colaboraciones y piezas por encargo.
 				</p>
-				<a class="hero__button" href="#obras">EXPLORAR OBRAS</a>
+				<span class="welcome__mark" aria-hidden="true"></span>
 			</div>
 		</section>
 
-		<!-- SOBRE SOFÍA: presentación breve, personal y artística -->
+		<!-- GALERÍA EDITORIAL: tres imágenes protagonistas -->
+		<section class="editorial-gallery" aria-label="Galería editorial">
+			<div class="editorial-gallery__inner">
+				<figure class="editorial-gallery__item">
+					<img
+						class="editorial-gallery__image"
+						src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=900&q=80"
+						alt="Pared del estudio con varias pinturas coloridas"
+					>
+				</figure>
+				<figure class="editorial-gallery__item editorial-gallery__item--center">
+					<img
+						class="editorial-gallery__image"
+						src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=900&q=80"
+						alt="Artista de pie junto a su obra en el taller"
+					>
+				</figure>
+				<figure class="editorial-gallery__item">
+					<img
+						class="editorial-gallery__image"
+						src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?auto=format&fit=crop&w=900&q=80"
+						alt="Detalle de plantas y objetos de estudio artístico"
+					>
+				</figure>
+			</div>
+		</section>
+
+		<!-- SOBRE: bloque de texto protagonista -->
 		<section class="about" id="sobre" aria-labelledby="about-title">
-			<article class="about__text">
-				<h2 class="about__title" id="about-title">Sobre Sofía</h2>
+			<div class="about__intro">
+				<h2 class="about__title" id="about-title">Hola, soy Sofía</h2>
 				<p class="about__paragraph">
-					Sofía Artigas es una artista visual que trabaja con pintura, collage y piezas mixtas.
-					Su búsqueda explora la memoria de los materiales y la tensión entre gesto y estructura.
+					Soy artista visual y trabajo entre pintura, collage y composición editorial.
+					Desarrollo obras para interiores, proyectos de marca y colaboraciones creativas.
 				</p>
-				<p class="about__paragraph">
-					Desde su estudio, desarrolla obras donde lo íntimo y lo editorial conviven en una narrativa
-					elegante, con una mirada femenina sin estereotipos.
-				</p>
-			</article>
+				<a class="about__button" href="#contacto">Más sobre mí</a>
+			</div>
 
 			<figure class="about__figure">
 				<img
 					class="about__image"
-					src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=1100&q=80"
+					src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=1200&q=80"
 					alt="Mujer artista pintando de espaldas en su taller"
 				>
-				<figcaption class="about__caption">Estudio de Sofía, luz de tarde.</figcaption>
+				<figcaption class="about__caption">Estudio de Sofía, luz natural y proceso abierto.</figcaption>
 			</figure>
 		</section>
 
-		<!-- OBRAS: galería editorial con tamaños asimétricos -->
+		<!-- OBRAS: colección uniforme tipo catálogo curado -->
 		<section class="works" id="obras" aria-labelledby="works-title">
 			<header class="works__header">
 				<h2 class="works__title" id="works-title">OBRAS SELECCIONADAS</h2>

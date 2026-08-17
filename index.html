@@ -9,7 +9,7 @@
 	<!-- Tipografías: sans moderna + serif estilizada -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;500;600;700&family=Gilda+Display&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="styles.css">
 </head>
@@ -19,103 +19,79 @@
 
 	<header class="site-header" id="inicio">
 		<div class="site-header__inner">
-			<nav class="site-header__nav site-header__nav--left" aria-label="Navegación izquierda">
-				<ul class="site-header__menu">
-					<li class="site-header__item"><a class="site-header__link" href="#sobre">About</a></li>
-					<li class="site-header__item"><a class="site-header__link" href="#obras">Portfolio</a></li>
-					<li class="site-header__item"><a class="site-header__link" href="#proceso">Proceso</a></li>
-				</ul>
-			</nav>
+			<div class="site-header__topbar">
+				<nav class="site-header__nav site-header__nav--left" aria-label="Navegación izquierda">
+					<ul class="site-header__menu">
+						<li class="site-header__item"><a class="site-header__link" href="#sobre">About</a></li>
+						<li class="site-header__item"><a class="site-header__link" href="#obras">Portfolio</a></li>
+						<li class="site-header__item"><a class="site-header__link" href="#proceso">Proceso</a></li>
+					</ul>
+				</nav>
 
-			<a class="site-header__brand" href="#inicio" aria-label="Ir al inicio">
-				<img
-					class="site-header__logo"
-					src="images/Logo.png"
-					alt="Sofía Artigas"
-				>
-				<span class="visually-hidden">Sofía Artigas Studio</span>
-			</a>
+				<a class="site-header__brand" href="#inicio" aria-label="Ir al inicio">
+					<img
+						class="site-header__logo"
+						src="images/Logo.png"
+						alt="Sofía Artigas"
+					>
+					<span class="visually-hidden">Sofía Artigas Studio</span>
+				</a>
 
-			<nav class="site-header__nav site-header__nav--right" aria-label="Navegación derecha">
-				<ul class="site-header__menu">
-					<li class="site-header__item"><a class="site-header__link" href="#obras">Obras</a></li>
-					<li class="site-header__item"><a class="site-header__link" href="#contacto">Contacto</a></li>
-					<li class="site-header__item"><a class="site-header__link" href="mailto:hola@sofiaartigasstudio.com">Email</a></li>
-				</ul>
-			</nav>
+				<nav class="site-header__nav site-header__nav--right" aria-label="Navegación derecha">
+					<ul class="site-header__menu">
+						<li class="site-header__item"><a class="site-header__link" href="#obras">Obras</a></li>
+						<li class="site-header__item"><a class="site-header__link" href="#contacto">Contacto</a></li>
+						<li class="site-header__item"><a class="site-header__link" href="mailto:hola@sofiaartigasstudio.com">Email</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="site-header__hero">
+				<p class="site-header__tagline">Soy Sofía Artigas, artista visual nacida en Montevideo, Uruguay.<br>Desde pequeña encontré en el dibujo y la pintura una forma de observar el mundo.<br>Y en cada obra, una forma de expresar lo que no siempre se puede decir.</p>
+				<div class="site-header__actions">
+					<a class="site-header__cta" href="#obras">Galeria</a>
+					<a class="site-header__cta" href="#contacto">Contacto</a>
+				</div>
+			</div>
 		</div>
 	</header>
 
 	<main class="main" id="contenido">
-		<!-- HERO: imagen protagonista de estudio/galería -->
-		<section class="hero" aria-labelledby="hero-title">
-			<figure class="hero__figure">
-				<img
-					class="hero__image"
-					src="images/Arte%201.jpg"
-					alt="Obra abstracta en trazos orgánicos oscuros sobre fondo claro"
-				>
-				<figcaption class="hero__caption">Sofía Artigas Studio: pintura, materia y archivo visual.</figcaption>
-			</figure>
-		</section>
 
 		<!-- BIENVENIDA: texto central de presentación -->
-		<section class="welcome" aria-labelledby="hero-title">
-			<div class="welcome__inner">
-				<h1 class="welcome__title" id="hero-title">Bienvenida a mi estudio</h1>
-				<p class="welcome__text">
-					Pinturas para espacios sensibles. Series originales, colaboraciones y piezas por encargo.
-				</p>
-				<span class="welcome__mark" aria-hidden="true"></span>
-			</div>
-		</section>
+		<section class="welcome" id="sobre" aria-labelledby="hero-title">
+			<div class="welcome__grid">
+				<figure class="welcome__card welcome__card--media">
+					<img
+						class="welcome__image"
+						src="images/Pin1.jpg"
+						alt="Artista en su estudio durante una sesion de grabacion"
+					>
+					<span class="welcome__ornament welcome__ornament--left" aria-hidden="true"></span>
+				</figure>
 
-		<!-- GALERÍA EDITORIAL: tres imágenes protagonistas -->
-		<section class="editorial-gallery" aria-label="Galería editorial">
-			<div class="editorial-gallery__inner">
-				<figure class="editorial-gallery__item">
+				<article class="welcome__card welcome__card--text">
+					<h1 class="welcome__title" id="hero-title">Bienvenido a mi estudio</h1>
+					<p class="welcome__text">
+						Mi obra nace de la exploracion de la memoria, las emociones y esos pequenos momentos de la vida cotidiana que, aunque parezcan insignificantes, dejan una huella. Trabajo principalmente con pintura, collage y dibujo, combinando formas, texturas y colores para construir imagenes que inviten a detenerse y mirar.
+					</p>
+				</article>
+
+				<article class="welcome__card welcome__card--text welcome__card--text-alt">
+					<p class="welcome__quote">
+						Me interesa especialmente lo imperfecto, lo espontaneo y aquello que aparece durante el proceso sin haber sido planeado. Cada obra es una busqueda: una manera de transformar una sensacion, un recuerdo o una experiencia en algo que pueda ser compartido.
+					</p>
+				</article>
+
+				<figure class="welcome__card welcome__card--media welcome__card--media-alt">
 					<img
-						class="editorial-gallery__image"
-						src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=900&q=80"
-						alt="Pared del estudio con varias pinturas coloridas"
+						class="welcome__image"
+						src="images/Pin2.jpg"
+						alt="Retrato en estudio con composicion artistica"
 					>
-				</figure>
-				<figure class="editorial-gallery__item editorial-gallery__item--center">
-					<img
-						class="editorial-gallery__image"
-						src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=900&q=80"
-						alt="Artista de pie junto a su obra en el taller"
-					>
-				</figure>
-				<figure class="editorial-gallery__item">
-					<img
-						class="editorial-gallery__image"
-						src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?auto=format&fit=crop&w=900&q=80"
-						alt="Detalle de plantas y objetos de estudio artístico"
-					>
+					<span class="welcome__ornament welcome__ornament--right" aria-hidden="true"></span>
 				</figure>
 			</div>
-		</section>
-
-		<!-- SOBRE: bloque de texto protagonista -->
-		<section class="about" id="sobre" aria-labelledby="about-title">
-			<div class="about__intro">
-				<h2 class="about__title" id="about-title">Hola, soy Sofía</h2>
-				<p class="about__paragraph">
-					Soy artista visual y trabajo entre pintura, collage y composición editorial.
-					Desarrollo obras para interiores, proyectos de marca y colaboraciones creativas.
-				</p>
-				<a class="about__button" href="#contacto">Más sobre mí</a>
-			</div>
-
-			<figure class="about__figure">
-				<img
-					class="about__image"
-					src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=1200&q=80"
-					alt="Mujer artista pintando de espaldas en su taller"
-				>
-				<figcaption class="about__caption">Estudio de Sofía, luz natural y proceso abierto.</figcaption>
-			</figure>
 		</section>
 
 		<!-- OBRAS: colección uniforme tipo catálogo curado -->
@@ -129,7 +105,7 @@
 				<figure class="works__item">
 					<img
 						class="works__image"
-						src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=1200&q=80"
+						src="images/FragmentoI.jpg"
 						alt="Pintura abstracta en tonos cálidos con formas orgánicas"
 					>
 					<figcaption class="works__caption">
@@ -141,7 +117,7 @@
 				<figure class="works__item">
 					<img
 						class="works__image"
-						src="https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?auto=format&fit=crop&w=900&q=80"
+						src="images/EjeRojo.jpg"
 						alt="Detalle de obra con líneas rojas y textura de papel"
 					>
 					<figcaption class="works__caption">
@@ -153,7 +129,7 @@
 				<figure class="works__item">
 					<img
 						class="works__image"
-						src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=1200&q=80"
+						src="images/MateriaQuieta.jpg"
 						alt="Composición artística con capas de color beige, terracota y rojo"
 					>
 					<figcaption class="works__caption">
@@ -165,7 +141,7 @@
 				<figure class="works__item">
 					<img
 						class="works__image"
-						src="https://images.unsplash.com/photo-1579965342575-16428a7c8881?auto=format&fit=crop&w=900&q=80"
+						src="images/PulsoIII.jpg"
 						alt="Pieza abstracta con contraste de tonos neutros y acentos intensos"
 					>
 					<figcaption class="works__caption">
@@ -185,14 +161,14 @@
 					<figure class="process__media">
 						<img
 							class="process__image"
-							src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?auto=format&fit=crop&w=900&q=80"
+							src="images/Materia.jpg"
 							alt="Pigmentos en polvo y recipientes de taller artístico"
 						>
 					</figure>
 					<div class="process__content">
 						<h3 class="process__item-title">Materia</h3>
 						<p class="process__item-text">
-							Lino crudo, papel de algodón y capas de pigmento para construir superficies con memoria.
+							Lino, papel y capas de pigmento para construir superficies con memoria.
 						</p>
 					</div>
 				</article>
@@ -201,14 +177,14 @@
 					<figure class="process__media">
 						<img
 							class="process__image"
-							src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=900&q=80"
+							src="images/Ritmo.jpg"
 							alt="Pinceles y trazos sobre mesa de trabajo"
 						>
 					</figure>
 					<div class="process__content">
 						<h3 class="process__item-title">Ritmo</h3>
 						<p class="process__item-text">
-							Gestos lentos, pausas y repeticiones: cada obra aparece por acumulación y contraste.
+							Gestos lentos y pausas: cada obra aparece por acumulacion y contraste.
 						</p>
 					</div>
 				</article>
@@ -217,46 +193,110 @@
 					<figure class="process__media">
 						<img
 							class="process__image"
-							src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=900&q=80"
+							src="images/Archivo.jpg"
 							alt="Cuaderno con bocetos y notas de proceso creativo"
 						>
 					</figure>
 					<div class="process__content">
 						<h3 class="process__item-title">Archivo</h3>
 						<p class="process__item-text">
-							Bocetos, fotografías y recortes editoriales alimentan nuevas series y variaciones.
+							Bocetos y fotografias editoriales que alimentan nuevas series y variaciones.
+						</p>
+					</div>
+				</article>
+
+				<article class="process__item">
+					<figure class="process__media">
+						<img
+							class="process__image"
+							src="images/Exhibicion.jpg"
+							alt="Piezas en exhibicion dentro de una galeria de arte"
+						>
+					</figure>
+					<div class="process__content">
+						<h3 class="process__item-title">Exhibicion</h3>
+						<p class="process__item-text">
+							Montajes y colaboraciones para espacios, marcas y proyectos curatoriales.
 						</p>
 					</div>
 				</article>
 			</div>
 		</section>
 
-		<!-- CONTACTO: cierre simple y directo -->
+		<!-- CONTACTO: bloque editorial minimalista -->
 		<section class="contact" id="contacto" aria-labelledby="contact-title">
-			<h2 class="contact__title" id="contact-title">Contacto</h2>
-			<p class="contact__text">
-				Para colaboraciones, obras por encargo o exposiciones, escribime.
-			</p>
+			<div class="contact__layout">
+				<p class="contact__stamp">SOFIA ARTIGAS STUDIO</p>
+				<h2 class="contact__title" id="contact-title">Contacto</h2>
+				<p class="contact__meta">Montevideo, Uruguay | hola@sofiaartigasstudio.com | +598 99 000 000</p>
 
-			<ul class="contact__list" aria-label="Canales de contacto">
-				<li class="contact__item"><a class="contact__link" href="mailto:hola@sofiaartigasstudio.com">hola@sofiaartigasstudio.com</a></li>
-				<li class="contact__item"><a class="contact__link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-				<li class="contact__item"><a class="contact__link" href="https://www.behance.net" target="_blank" rel="noopener noreferrer">Behance</a></li>
-			</ul>
+				<form class="contact__form" action="#" method="post">
+					<label class="visually-hidden" for="nombre">Nombre</label>
+					<input class="contact__input" id="nombre" name="nombre" type="text" placeholder="Nombre" required>
+
+					<label class="visually-hidden" for="telefono">Telefono</label>
+					<input class="contact__input" id="telefono" name="telefono" type="tel" placeholder="Telefono">
+
+					<label class="visually-hidden" for="email">Email</label>
+					<input class="contact__input" id="email" name="email" type="email" placeholder="Email" required>
+
+					<label class="visually-hidden" for="tema">Tema</label>
+					<input class="contact__input" id="tema" name="tema" type="text" placeholder="Tema">
+
+					<label class="visually-hidden" for="mensaje">Mensaje</label>
+					<textarea class="contact__textarea" id="mensaje" name="mensaje" rows="5" placeholder="Mensaje"></textarea>
+
+					<div class="contact__submit-row">
+						<button class="contact__submit" type="submit">Enviar</button>
+					</div>
+				</form>
+			</div>
 		</section>
 	</main>
 
 	<footer class="site-footer">
 		<div class="site-footer__inner">
-			<p class="site-footer__brand">Sofía Artigas Studio</p>
-			<p class="site-footer__contact">
-				<a class="site-footer__link" href="mailto:hola@sofiaartigasstudio.com">hola@sofiaartigasstudio.com</a>
-			</p>
-			<ul class="site-footer__social" aria-label="Redes sociales">
-				<li class="site-footer__social-item"><a class="site-footer__link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-				<li class="site-footer__social-item"><a class="site-footer__link" href="https://www.behance.net" target="_blank" rel="noopener noreferrer">Behance</a></li>
-			</ul>
-			<p class="site-footer__text">© 2026 Sofía Artigas Studio. Dirección de arte y obra original.</p>
+			<div class="site-footer__top">
+				<div class="site-footer__brand-wrap">
+					<p class="site-footer__brand">SOFIA ARTIGAS</p>
+					<p class="site-footer__subtitle">ARTISTA VISUAL</p>
+				</div>
+
+				<nav class="site-footer__menu" aria-label="Enlaces del sitio">
+					<a class="site-footer__menu-link" href="#sobre">About</a>
+					<a class="site-footer__menu-link" href="#obras">Portfolio</a>
+					<a class="site-footer__menu-link" href="#proceso">Proceso</a>
+					<a class="site-footer__menu-link" href="#contacto">Contacto</a>
+				</nav>
+
+				<p class="site-footer__contact">
+					<a class="site-footer__link" href="mailto:hola@sofiaartigasstudio.com">hola@sofiaartigasstudio.com</a>
+				</p>
+			</div>
+
+			<div class="site-footer__bottom">
+				<ul class="site-footer__social" aria-label="Redes sociales">
+					<li class="site-footer__social-item">
+						<a class="site-footer__social-link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+							<svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+								<rect x="3" y="3" width="18" height="18" rx="5" ry="5"></rect>
+								<circle cx="12" cy="12" r="4"></circle>
+								<circle cx="17.5" cy="6.5" r="1"></circle>
+							</svg>
+						</a>
+					</li>
+					<li class="site-footer__social-item">
+						<a class="site-footer__social-link" href="https://www.behance.net" target="_blank" rel="noopener noreferrer" aria-label="Behance">
+							<svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+								<path d="M4 8.5h6.1c2 0 3.2 1.1 3.2 2.8 0 1.3-.7 2.1-1.8 2.4 1.5.2 2.4 1.3 2.4 2.9 0 2.1-1.5 3.4-3.9 3.4H4V8.5zm2.2 4.6h3.2c1 0 1.6-.5 1.6-1.4s-.6-1.4-1.6-1.4H6.2v2.8zm0 4.8h3.5c1.2 0 1.9-.6 1.9-1.6s-.7-1.6-1.9-1.6H6.2v3.2z"></path>
+								<path d="M15.3 14.8c.1-2.7 1.8-4.5 4.4-4.5 2.7 0 4.3 1.8 4.3 4.7 0 .3 0 .6-.1.8h-6.5c.1 1.4.9 2.2 2.2 2.2.9 0 1.6-.4 2-1.1h2.2c-.6 1.9-2.2 3.1-4.3 3.1-2.8 0-4.4-1.9-4.4-5.2zm6.6-.7c-.1-1.2-.9-1.9-2-1.9-1.1 0-1.9.7-2.1 1.9h4.1z"></path>
+								<rect x="17" y="8" width="5" height="1.2"></rect>
+							</svg>
+						</a>
+					</li>
+				</ul>
+				<p class="site-footer__text">© 2026 Sofia Artigas Studio</p>
+			</div>
 		</div>
 	</footer>
 </body>
